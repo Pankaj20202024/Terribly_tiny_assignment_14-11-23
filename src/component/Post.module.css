@@ -1,0 +1,352 @@
+.PostContainer {
+    margin-top: 5%;
+
+}
+
+.no_of_post {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: rgb(214, 214, 214);
+    border-right-color: rgb(214, 214, 214);
+    border-left-color: white;
+    border-bottom-color: white;
+    width: 30%;
+}
+
+.no_of_post p {
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(5, 157, 168);
+    text-align: center;
+}
+
+.setting_border_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting_border_container1 {
+
+    width: 30%;
+
+}
+
+.setting_border_container2 {
+
+    width: 70%;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: rgb(214, 214, 214);
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+}
+
+
+.PostDetailsContainer {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.PostHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    margin-top: 6%;
+
+}
+
+.PostHeader h1 {
+    font-size: 0.7rem;
+    color: black;
+    padding-left: 3%;
+    font-weight: bolder;
+
+}
+
+.PostHeader img {
+    width: 6%;
+    padding-right: 4%;
+}
+
+.PostDetails {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 1%;
+
+}
+
+.PostDetails p {
+    font-size: 0.7rem;
+    color: rgb(121, 121, 121);
+    width: 100%;
+    padding-left: 2%;
+    margin-top: -1%;
+}
+
+.PostFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.PostFooterInner1 {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.PostFooterInner1 p {
+    font-size: 0.45rem;
+    color: rgb(5, 157, 168);
+    padding-left: 2%;
+}
+
+.PostFooterInner1 p span {
+    font-size: 0.45rem;
+    color: rgb(70, 70, 70);
+}
+
+.PostFooterInner2 {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.PostFooterInner2 p {
+    font-size: 0.45rem;
+    color: grey;
+}
+
+.dot {
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.horizontal_row {
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: rgb(214, 214, 214);
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+
+}
+
+
+@media only screen and (min-width: 290px) {
+    .PostHeader img {
+        width: 5%;
+    }
+
+
+}
+
+@media only screen and (min-width: 357px) {
+    .PostHeader img {
+        width: 4%;
+    }
+
+}
+
+@media only screen and (min-width: 426px) {
+    .PostHeader img {
+        width: 3%;
+    }
+
+}
+
+@media only screen and (min-width: 460px) {
+    .no_of_post p {
+        font-size: 1rem;
+    }
+
+    .PostHeader h1 {
+        font-size: 1rem;
+    }
+
+    .PostHeader img {
+        width: 6%;
+    }
+
+    .PostDetails p {
+        font-size: 1rem;
+    }
+
+    .PostFooterInner1 p {
+        font-size: 0.9rem;
+    }
+
+    .PostFooterInner1 p span {
+        font-size: 0.9rem;
+    }
+
+    .PostFooterInner2 p {
+        font-size: 0.9rem;
+        color: grey;
+    }
+
+    .dot {
+        border: 1.5px solid grey;
+        border-radius: 50%;
+    }
+
+}
+
+
+@media only screen and (min-width: 500px) {
+    .no_of_post p {
+        font-size: 1.2rem;
+    }
+
+    .PostHeader h1 {
+        font-size: 1.2rem;
+    }
+
+    .PostHeader img {
+        width: 6%;
+    }
+
+    .PostDetails p {
+        font-size: 1.2rem;
+    }
+
+    .PostFooterInner1 p {
+        font-size: 1rem;
+    }
+
+    .PostFooterInner1 p span {
+        font-size: 1.1rem;
+    }
+
+    .PostFooterInner2 p {
+        font-size: 1rem;
+        color: grey;
+    }
+
+    .dot {
+        border: 2px solid grey;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 650px) {
+    .no_of_post p {
+        font-size: 1.4rem;
+    }
+
+    .PostHeader h1 {
+        font-size: 1.4rem;
+    }
+
+    .PostHeader img {
+        width: 6%;
+    }
+
+    .PostDetails p {
+        font-size: 1.4rem;
+    }
+
+    .PostFooterInner1 p {
+        font-size: 1.3rem;
+    }
+
+    .PostFooterInner1 p span {
+        font-size: 1.3rem;
+    }
+
+    .PostFooterInner2 p {
+        font-size: 1.3rem;
+        color: grey;
+    }
+
+    .dot {
+        border: 2.2px solid grey;
+        border-radius: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+    .no_of_post p {
+        font-size: 1.6rem;
+    }
+
+    .PostHeader h1 {
+        font-size: 1.6rem;
+    }
+
+    .PostHeader img {
+        width: 6%;
+    }
+
+    .PostDetails p {
+        font-size: 1.6rem;
+    }
+
+    .PostFooterInner1 p {
+        font-size: 1.5rem;
+    }
+
+    .PostFooterInner1 p span {
+        font-size: 1.5rem;
+    }
+
+    .PostFooterInner2 p {
+        font-size: 1.5rem;
+        color: grey;
+    }
+
+    .dot {
+        border: 2.3px solid grey;
+        border-radius: 50%;
+    }
+
+}
+
+
+@media only screen and (min-width: 850px) {
+    .no_of_post p {
+        font-size: 1.8rem;
+    }
+
+    .PostHeader h1 {
+        font-size: 1.8rem;
+    }
+
+    .PostHeader img {
+        width: 6%;
+    }
+
+    .PostDetails p {
+        font-size: 1.8rem;
+    }
+
+    .PostFooterInner1 p {
+        font-size: 1.7rem;
+    }
+
+    .PostFooterInner1 p span {
+        font-size: 1.7rem;
+    }
+
+    .PostFooterInner2 p {
+        font-size: 1.7rem;
+        color: grey;
+    }
+
+    .dot {
+        border: 2.5px solid grey;
+        border-radius: 50%;
+    }
+
+}

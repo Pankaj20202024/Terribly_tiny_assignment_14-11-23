@@ -1,0 +1,361 @@
+.ProfileContainer {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* i am here  */
+
+.profile_inner_container1 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile_inner_container1 img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-top: -25%;
+
+}
+
+.profile_inner_container2 {
+    padding: 2%;
+    width: 55%;
+
+}
+
+.profile_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    width: 100%;
+}
+
+.profile_content p {
+    font-size: .8rem;
+    
+}
+
+.profile_content img {
+    width: 10%;
+}
+
+.profile_details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: -10%;
+    width: 100%;
+}
+
+.user_followers {
+    margin-right: 6%;
+}
+
+.user_following {
+    margin-left: 6%;
+}
+
+.number {
+    border: 2px solid rgb(125, 125, 125);
+    border-radius: 10px;
+    text-align: center;
+    color: grey;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+.heading {
+    margin-top: -20%;
+    color: grey;
+    font-size: .6rem;
+}
+
+.moreProfileDetails {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 95%;
+    margin-left: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.moreProfileDetails p {
+    font-size: 0.65rem;
+    text-align: start;
+    color: gray;
+    width: 100%;
+}
+
+.moreProfileDetails a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.moreProfileDetails a p {
+    color: rgb(5, 157, 168);
+    font-size: 0.6rem;
+}
+
+
+
+.others_icons_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.others_icons_container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.others_icons_container div img {
+    width: 20%;
+}
+
+.others_icons_container div span {
+    font-size: 0.7rem;
+}
+
+
+@media only screen and (min-width: 372px) {
+    .profile_content p {
+        font-size: 0.94rem;
+    }
+}
+
+@media only screen and (min-width: 460px) {
+
+    .profile_inner_container1 {
+        width: 30%;
+    }
+
+    .profile_content p {
+        font-size: 1.4rem;
+    }
+
+    .profile_content img {
+        width: 9%;
+
+    }
+
+    .number {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .moreProfileDetails p {
+        font-size: 1rem;
+    }
+
+    .moreProfileDetails a p {
+        font-size: 1rem;
+        margin-top: -1%;
+        margin-bottom: 8%;
+    }
+
+    .others_icons_container div img {
+        width: 21%;
+    }
+
+    .others_icons_container div span {
+        font-size: 1rem;
+
+    }
+
+    .profile_details {
+        margin-top: -5%;
+    }
+}
+
+
+@media only screen and (min-width: 500px) {
+    .profile_inner_container1 {
+        width: 26%;
+    }
+
+    .profile_details {
+        margin-top: -3%;
+    }
+
+    .profile_inner_container1 {
+        width: 30%;
+    }
+
+    .profile_content p {
+        font-size: 1.5rem;
+
+    }
+
+    .profile_content img {
+        width: 11%;
+
+    }
+
+    .number {
+        font-size: 1.2rem;
+
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .moreProfileDetails p {
+        margin-top: -1%;
+        font-size: 1.2rem;
+    }
+
+    .moreProfileDetails a p {
+        font-size: 1.2rem;
+        margin-bottom: 6%;
+    }
+
+    .others_icons_container div img {
+        width: 21%;
+    }
+
+    .others_icons_container div span {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .profile_inner_container1 {
+        width: 28%;
+    }
+
+    .profile_content p {
+        font-size: 1.8rem;
+
+    }
+
+    .profile_content img {
+        width: 12%;
+
+    }
+
+    .number {
+        font-size: 1.4rem;
+
+    }
+
+    .heading {
+        font-size: 1.4rem;
+    }
+
+    .moreProfileDetails p {
+        margin-top: -1%;
+        font-size: 1.4rem;
+    }
+
+    .moreProfileDetails a p {
+        font-size: 1.4rem;
+        margin-bottom: 6%;
+    }
+
+    .others_icons_container div img {
+        width: 23%;
+    }
+
+    .others_icons_container div span {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 750px) {
+    .profile_content p {
+        font-size: 2rem;
+
+    }
+
+    .profile_content img {
+        width: 13%;
+
+    }
+
+    .number {
+        font-size: 1.6rem;
+
+    }
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    .moreProfileDetails p {
+        margin-top: -1%;
+        font-size: 1.6rem;
+    }
+
+    .moreProfileDetails a p {
+        font-size: 1.6rem;
+        margin-bottom: 6%;
+    }
+
+    .others_icons_container div img {
+        width: 25%;
+    }
+
+    .others_icons_container div span {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .profile_content p {
+        font-size: 2.2rem;
+
+    }
+
+    .profile_content img {
+        width: 12%;
+
+    }
+
+    .number {
+        font-size: 1.8rem;
+
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .moreProfileDetails p {
+        margin-top: -1%;
+        font-size: 1.8rem;
+    }
+
+    .moreProfileDetails a p {
+        font-size: 1.6rem;
+        margin-bottom: 6%;
+    }
+
+    .others_icons_container div img {
+        width: 26%;
+    }
+
+    .others_icons_container div span {
+        font-size: 1.9rem;
+    }
+}

@@ -1,0 +1,39 @@
+.BackgroundImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1%;
+}
+
+.BackgroundImages img {
+    width: 100%;
+    height: 200px;
+}
+
+
+@media only screen and (min-width: 460px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 350px;
+    }
+}
+@media only screen and (min-width: 680px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+

@@ -1,0 +1,70 @@
+{
+  "nav_heading1": "Stories",
+  "nav_heading2": "Courses",
+  "nav_image_url": "./images/stories.png",
+  "background_image_url": "./images/background_image.png",
+  "profile_component_data": [
+    {
+      "user_profile_url": "./images/userimage.jpeg",
+      "user_name": "Anuj Gosalia",
+      "user_side_icon1": "./images/diamond.png",
+      "user_side_icon2": "./images/right.png",
+      "user_followers_number": "6482",
+      "user_following_number": "245",
+      "user_followers_heading": "Followers",
+      "user_following_heading": "Following",
+      "user_designation": "Co-founder &CEO at Terribly Tiny Tales",
+      "user_instagram_link": "http://www.instagram.com.anujgosalia",
+      "star_icon_url": "./images/star.png",
+      "total_no_of_stars": "125",
+      "like_icon_url": "./images/like.png",
+      "total_no_of_like": "12",
+      "eye_icon_url": "./images/eyes.png",
+      "total_no_views": "57.8K",
+      "heart_icon_url": "./images/heart.png",
+      "total_no_of_heart": "26.0K"
+    }
+  ],
+  "post_component_data": [
+    {
+      "total_no_of_post": "134",
+      "post_like_icon_url": "./images/like.png",
+      "post_details": [
+        {
+          "post_id": "1",
+          "post_heading": "A Changing World Order",
+          "post_details": "The world is changing at a feverish pace. Friends, colleagues and everyone engaged in knowledge work are begnning to sense this , including...",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "August 2",
+          "post_read": "2 mins Read",
+          "post_views": "102 Views"
+        },
+        {
+          "post_id": "2",
+          "post_heading": "Indian v/s Australia",
+          "post_details": "Think about it - this cricket series was akin to therapy.",
+          "post_details2": "Laying our childhood trauma up top , working with it slowly and surely over two m..",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "January 21",
+          "post_read": "1 mins Read",
+          "post_views": "156 Views"
+        },
+        {
+          "post_id": "3",
+          "post_heading": "Write To build",
+          "post_details": "Writing is the first step to create:",
+          "step1":"stories",
+          "step2":"products",
+          "step3":"companies",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "August 2",
+          "post_read": "2 mins Read",
+          "post_views": "102 Views"
+        }
+      ]
+    }
+  ]
+}
