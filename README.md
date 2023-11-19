@@ -1,70 +1,364 @@
-# Getting Started with Create React App
+#### Hosted Link : https://terriblyassignementbypankaj12015448.netlify.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
-## Available Scripts
+## **LIBRARIES AND PLUGINS USED**
 
-In the project directory, you can run:
+1. React
+2. useState
+3. style is imported from a local CSS module file for styling the component.
+4. data is hardcoded in a local JSON.
 
-### `npm start`
+***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **EXPLANATION OF THE CODE**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **DATA SOURCE**
 
-### `npm test`
+The application utilizes a local JSON file, `Data.json`, to store and retrieve dynamic content for various components. This approach allows for easy maintenance and modification of content without directly altering the component code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Example `Data.json` structure:
 
-### `npm run build`
+```json
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+{
+  "nav_heading1": "Stories",
+  "nav_heading2": "Courses",
+  "nav_image_url": "./images/stories.png",
+  "background_image_url": "./images/background_image.png",
+  "profile_component_data": [
+    {
+      "user_profile_url": "./images/userimage.jpeg",
+      "user_name": "Anuj Gosalia",
+      "user_side_icon1": "./images/diamond.png",
+      "user_side_icon2": "./images/right.png",
+      "user_followers_number": "6482",
+      "user_following_number": "245",
+      "user_followers_heading": "Followers",
+      "user_following_heading": "Following",
+      "user_designation": "Co-founder &CEO at Terribly Tiny Tales",
+      "user_instagram_link": "http://www.instagram.com.anujgosalia",
+      "star_icon_url": "./images/star.png",
+      "total_no_of_stars": "125",
+      "like_icon_url": "./images/like.png",
+      "total_no_of_like": "12",
+      "eye_icon_url": "./images/eyes.png",
+      "total_no_views": "57.8K",
+      "heart_icon_url": "./images/heart.png",
+      "total_no_of_heart": "26.0K"
+    }
+  ],
+  "post_component_data": [
+    {
+      "total_no_of_post": "134",
+      "post_like_icon_url": "./images/like.png",
+      "post_details": [
+        {
+          "post_id": "1",
+          "post_heading": "A Changing World Order",
+          "post_details": "The world is changing at a feverish pace. Friends, colleagues and everyone engaged in knowledge work are begnning to sense this , including...",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "August 2",
+          "post_read": "2 mins Read",
+          "post_views": "102 Views"
+        },
+        {
+          "post_id": "2",
+          "post_heading": "Indian v/s Australia",
+          "post_details": "Think about it - this cricket series was akin to therapy.",
+          "post_details2": "Laying our childhood trauma up top , working with it slowly and surely over two m..",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "January 21",
+          "post_read": "1 mins Read",
+          "post_views": "156 Views"
+        },
+        {
+          "post_id": "3",
+          "post_heading": "Write To build",
+          "post_details": "Writing is the first step to create:",
+          "step1":"stories",
+          "step2":"products",
+          "step3":"companies",
+          "post_type": "musing",
+          "post_by": "by anujgosalia",
+          "post_day": "August 2",
+          "post_read": "2 mins Read",
+          "post_views": "102 Views"
+        }
+      ]
+    }
+  ]
+}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+## Their are total 4 components in my react application 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navbar_component.js
+2. Background_images.js
+3. Profile_component.js
+4. Post_component.js
 
-### `npm run eject`
+## Navbar Component
+The Navbar component (Navbar_component.js) provides a navigation bar with an icon, heading, and a button. The styling is implemented using a CSS module file (Navbar_component.module.css).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###Properties
+1. nav_image_url: URL of the icon displayed in the navigation bar.
+2. nav_heading1: Heading text displayed next to the icon.
+3. nav_heading2: Text displayed on the button in the navigation bar.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###Usage
+To use the Navbar component, import it into your application and include it where needed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```jsx
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+import React from "react";
+import styles from "./Navbar_component.module.css";
+import data from "./Data.json"
 
-## Learn More
+export default function Navbar_component() {
+  return (
+    <div className={styles.navbar}>
+      <div className={styles.navbar_inner_container1}>
+        <img src={data.nav_image_url} alt="my assignment" />
+        <div className={styles.vertical}></div>
+        <p>{data.nav_heading1}</p>
+      </div>
+      <div className={styles.navbar_inner_container2}>
+        <button>{data.nav_heading2}</button>
+      </div>
+    </div>
+  );
+}
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+The styling for the Navbar component is defined in the Navbar_component.module.css file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+``` jsx
 
-### Code Splitting
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 5%;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+.navbar_inner_container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
 
-### Analyzing the Bundle Size
+.navbar_inner_container1 img {
+    filter: invert(100%);
+    width: 15%;
+    margin: 1%;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+.vertical {
+    border-left: 2px solid #fca503;
+    height: 20px;
+    margin: 1%;
+}
 
-### Making a Progressive Web App
+.navbar_inner_container1 p {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 1%;
+    font-size: 0.8rem;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+.navbar_inner_container2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
 
-### Advanced Configuration
+.navbar_inner_container2 button {
+    color: black;
+    background-color: #fca503;
+    padding: 0.4rem;
+    margin-right: 1%;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+@media only screen and (min-width: 460px) {
+    .navbar_inner_container1 p {
+        font-size: 1rem;
+    }
 
-### Deployment
+    .navbar_inner_container2 button {
+        font-size: 1rem;
+    }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    .vertical {
+        height: 28px;
+    }
+}
 
-### `npm run build` fails to minify
+@media only screen and (min-width: 495px) {
+    .navbar_inner_container1 p {
+        font-size: 1.1rem;
+    }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    .navbar_inner_container2 button {
+        font-size: 1.1rem;
+    }
+
+    .vertical {
+        height: 33px;
+    }
+}
+
+@media only screen and (min-width: 567px) {
+    .navbar_inner_container1 p {
+        font-size: 1.2rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 1.2rem;
+    }
+
+    .vertical {
+        height: 38px;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .navbar_inner_container1 p {
+        font-size: 1.3rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 1.3rem;
+    }
+
+    .vertical {
+        height: 42px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .navbar_inner_container1 p {
+        font-size: 1.4rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 1.4rem;
+    }
+
+    .vertical {
+        height: 44px;
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .navbar_inner_container1 p {
+        font-size: 1.5rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 1.5rem;
+    }
+
+    .vertical {
+        height: 48px;
+    }
+}
+
+
+@media only screen and (min-width: 730px) {
+    .navbar_inner_container1 p {
+        font-size: 1.8rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 1.7rem;
+        padding: 3%;
+    }
+
+    .vertical {
+        height: 50px;
+        border-width: 3.5px;
+    }
+
+    .navbar_inner_container1 img {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .navbar_inner_container1 p {
+        font-size: 2.3rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 2.3rem;
+        padding: 2%;
+    }
+
+    .vertical {
+        height: 55px;
+        border-width: 3.5px;
+    }
+
+    .navbar_inner_container1 img {
+        width: 15%;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .navbar_inner_container1 p {
+        font-size: 2.4rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 2.3rem;
+        padding: 2%;
+    }
+
+    .vertical {
+        height: 59px;
+        border-width: 3.6px;
+    }
+
+    .navbar_inner_container1 img {
+        width: 14%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar_inner_container1 p {
+        font-size: 2.6rem;
+    }
+
+    .navbar_inner_container2 button {
+        font-size: 2.3rem;
+        padding: 2%;
+    }
+
+    .vertical {
+        height: 64px;
+        border-width: 3.7px;
+    }
+
+    .navbar_inner_container1 img {
+        width: 13%;
+    }
+}
+
+```
+
+
