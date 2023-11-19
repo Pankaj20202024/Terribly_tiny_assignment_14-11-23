@@ -13,7 +13,7 @@
 
 ## **EXPLANATION OF THE CODE**
 
-## **DATA SOURCE**
+## DATA SOURCE
 
 The application utilizes a local JSON file, `Data.json`, to store and retrieve dynamic content for various components. This approach allows for easy maintenance and modification of content without directly altering the component code.
 
@@ -103,12 +103,12 @@ Example `Data.json` structure:
 ## Navbar Component
 The Navbar component (Navbar_component.js) provides a navigation bar with an icon, heading, and a button. The styling is implemented using a CSS module file (Navbar_component.module.css).
 
-###Properties
+### Properties
 1. nav_image_url: URL of the icon displayed in the navigation bar.
 2. nav_heading1: Heading text displayed next to the icon.
 3. nav_heading2: Text displayed on the button in the navigation bar.
 
-###Usage
+### Usage
 To use the Navbar component, import it into your application and include it where needed.
 
 ```jsx
