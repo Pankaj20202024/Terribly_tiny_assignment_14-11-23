@@ -13,7 +13,7 @@
 
 ## **EXPLANATION OF THE CODE**
 
-## DATA SOURCE
+### DATA SOURCE
 
 The application utilizes a local JSON file, `Data.json`, to store and retrieve dynamic content for various components. This approach allows for easy maintenance and modification of content without directly altering the component code.
 
