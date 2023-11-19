@@ -108,9 +108,6 @@ The Navbar component (Navbar_component.js) provides a navigation bar with an ico
 2. nav_heading1: Heading text displayed next to the icon.
 3. nav_heading2: Text displayed on the button in the navigation bar.
 
-### Usage
-To use the Navbar component, import it into your application and include it where needed.
-
 ```jsx
 
 import React from "react";
@@ -133,9 +130,10 @@ export default function Navbar_component() {
 }
 
 ```
+
 The styling for the Navbar component is defined in the Navbar_component.module.css file.
 
-``` jsx
+```css
 
 .navbar {
     background-color: black;
@@ -360,5 +358,72 @@ The styling for the Navbar component is defined in the Navbar_component.module.c
 }
 
 ```
+### Background Component
+The Background component (Background_images.jsx) displays the cover photo of the user.
+
+### Properties
+background_image_url: URL of the user's cover photo.
+
+```jsx
+
+import React from "react";
+import styles from "./Background_image.module.css";
+import data from "./Data.json";
+
+export default function Background_images() {
+  return (
+    <div className={styles.BackgroundImages}>
+      <img src={data.background_image_url} alt="my assignment" />
+    </div>
+  );
+}
+
+```
+
+The styling for the Navbar component is defined in the Navbar_component.module.css file.
+
+```css
+.BackgroundImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1%;
+}
+
+.BackgroundImages img {
+    width: 100%;
+    height: 200px;
+}
+
+
+@media only screen and (min-width: 460px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 350px;
+    }
+}
+@media only screen and (min-width: 680px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 400px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .BackgroundImages img {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+```
+
+
+
 
 
